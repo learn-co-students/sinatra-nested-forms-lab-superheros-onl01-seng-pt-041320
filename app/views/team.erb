@@ -1,3 +1,28 @@
+<h1><%= @team["name"] %></h1>
+<h2>Team Motto: <%= @team["motto"] %></h2>
 
+<% @superheroes.each do |superhero| %>
+    <div class="SuperHero1">
+        <h3>Hero Name: <%= superhero["name"] %></h3><br>
+        <h3>Hero Power: <%= superhero["power"] %></h3><br>
+        <h3>Hero Biography: <%= superhero["bio"] %></h3><br>
+    </div><br>
+    <% end %>
+
+<% @superheroes.each do |superhero| %>
+    <div class="SuperHero2">
+      <h3>Hero Name: <%= superhero["name"] %></h3><br>
+        <h3>Hero Power: <%= superhero["power"] %></h3><br>
+        <h3>Hero Biography: <%= superhero["bio"] %></h3><br>
+    </div><br>
+    <% end %>
+
+<% @superheroes.each do |superhero| %>
+    <div class="SuperHero3">
+      <h3>Hero Name: <%= superhero["name"] %></h3><br>
+        <h3>Hero Power: <%= superhero["power"] %></h3><br>
+        <h3>Hero Biography: <%= superhero["bio"] %></h3><br>
+    </div><br>
+    <% end %>
 
 

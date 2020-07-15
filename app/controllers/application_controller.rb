@@ -14,6 +14,10 @@ class App < Sinatra::Base
 
         @team = Team.new(@team_name, @team_motto)
 
+        params[:team][:name].each do |member|
+            Member.new(member[:name], member[:power], member[:bio])
+        end
+
         erb :team
     end
 

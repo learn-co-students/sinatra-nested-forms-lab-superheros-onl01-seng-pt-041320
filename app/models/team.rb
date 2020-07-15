@@ -1,4 +1,4 @@
-class Member
+class Team
     attr_reader :name, :motto
 
     @@all = []

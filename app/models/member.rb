@@ -1,5 +1,5 @@
 class Member
-    attr_reader :name, :power, bio
+    attr_reader :name, :power, :bio
 
     @@all = []
 

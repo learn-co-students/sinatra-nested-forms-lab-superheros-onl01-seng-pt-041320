@@ -1,11 +1,12 @@
 class Member
-    attr_reader :name, :motto
+    attr_reader :name, :power, bio
 
     @@all = []
 
-    def initialize(name, motto)
+    def initialize(name, power, bio)
         @name = name
-        @motto = motto
+        @power = power
+        @bio = bio
         @@all << self
     end
     
